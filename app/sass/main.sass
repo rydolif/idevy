@@ -25,23 +25,25 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	height: 45px
+	height: 50px
 	font-size: 18px
-	color: $accent
+	color: $black
 	font-weight: 700
-	border-radius: 20px
+	border-radius: 10px
 	max-width: fit-content
+	border: 1px solid $black
+	padding: 0 60px
+	text-transform: uppercase
 
 	&:hover,
 	&:focus
-		border: 1px solid $accent
-		background: $accent
-		color: #fff
+		border: 1px solid $red
+		color: $red
 
 // -----HAMBURGER-----
 .hamburger
 	position: relative
-	display: flex
+	display: none
 	padding: 0
 	border: none
 	background-color: transparent
@@ -114,29 +116,477 @@
 				transform: rotate(-45deg)
 
 
-	.header
-	padding: 30px 0
+.header
 
 	&__container
-		+between
+		display: grid
+		align-items: center
+		grid-template-columns: 1fr 140px 1fr
+		grid-gap: 15px
+		border-bottom: 1px solid $grey
+		padding-top: 25px
+		padding-bottom: 25px
 
 	&__phone
-		font-size: 15px
+		a
+			font-size: 15px
+			color: $text
+			font-weight: 500
+
+			&:hover
+				color: $red
 
 	&__logo
-		width: 100px
+		width: 140px
 
 		img
 			width: 100%
 			height: auto
-			db
+
+	&__info
+		display: flex
+		justify-content: flex-end
+		align-items: center
+
+		a
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-shrink: 0
+			width: 35px
+			height: 35px
+			border-radius: 50%
+
+			&:hover
+				background-color: $grey
+
+		span
+			position: absolute
+			top: 0
+			right: 0
+			transform: translate(15%, -15%)
+			display: flex
+			justify-content: center
+			align-items: center
+			min-width: 18px
+			min-height: 18px
+			background-color: $red
+			border-radius: 10px
+			padding: 3px
+			font-size: 10px
+			line-height: .7
+			color: #fff
+
+	&__search
+		position: relative
+		overflow: hidden
+		margin-right: 30px
+		border-radius: 7px
+		border: 1px #fff solid
+		font-size: 12px
+		padding: 1px
+		padding-left: 25px
+		+transition
+
+		&:hover,
+		&:focus,
+		&:active
+			border-color: #e8e8e8
+			padding-left: 40px
+
+			input
+				visibility: visible
+				width: 180px
+
+		button
+			background-color: transparent
+			border: 0
+			position: absolute
+			left: 3px
+			top: 50%
+			transform: translate(0, -50%)
+
+		input
+			visibility: hidden
+			height: 35px
+			line-height: 35px
+			width: 0
+			border: 0
+
+			&::placeholder
+				line-height: 35px
+
+	&__login
+		margin-right: 30px
+
+	&__comparison
+		margin-right: 30px
 
 
-.section
-	padding: 40px 0
+.nav
+
+	&__container
+		position: relative
+
+		&::after
+			content: ''
+			display: block
+			height: 1px
+			width: calc(100% + 60px)
+			margin-left: -30px
+			background-color: $grey
+			z-index: 1001
+
+	&__list
+		display: flex
+		justify-content: center
+		align-items: center
+
+		&_item
+			margin-right: 40px
+
+			&:hover
+				.nav__sub-list
+					top: 100%
+					opacity: 1
+					visibility: visible
+					z-index: 3
+
+		&_link
+			position: relative
+			display: block
+			text-transform: uppercase
+			letter-spacing: .8px
+			color: $black
+			padding: 30px 15px
+
+			&:hover
+				color: $red
+
+				&::before
+					opacity: 1
+
+				&::after
+					transform: translate(0, -45%) rotate(45deg)
+					border-color: $red
+
+			&::before
+				content: ''
+				position: absolute
+				bottom: 0
+				right: 0
+				left: 0
+				height: 1px
+				background-color: $red
+				opacity: 0
+				+transition
+
+			&--sub
+				&:hover
+					&::after
+						transform: translate(0, -45%) rotate(45deg)
+						border-color: $red
+
+				&::after
+					content: ''
+					position: absolute
+					top: 48%
+					right: 0
+					transform: translate(0, -50%) rotate(-135deg)
+					width: 6px
+					height: 6px
+					border-top: 1px solid #000
+					border-left: 1px solid #000
+					+transition
+
+	&__sub-list
+		position: absolute
+		top: 200%
+		left: 0
+		width: 100%
+		padding: 30px 0
+		background-color: #fff
+		z-index: 1000
+		display: flex
+		justify-content: space-around
+		align-items: center
+		visibility: hidden
+		opacity: 0
+		z-index: 2
+		+transition
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			width: 100vw
+			background-color: #fff
+			z-index: -1
+			box-shadow: 0 15px 16px -16px rgba(#000, .2)
+
+		&_item
+			max-width: 390px
+
+		&_title
+			text-transform: uppercase
+			margin-bottom: 20px
+			font-size: 16px
+
+		&_wrap
+			display: flex
+			justify-content: space-between
+
+		&_img
+			width: 48%
+
+			img
+				width: 100%
+
+		&_link
+			width: 48%
+
+			a
+				display: block
+				padding: 12px
+				color: $text
+
+				&:hover
+					color: $red
+
+	&__comparison
+
+
+.hero
+	position: relative
+	background-color: $grey
+
+	&__title
+		font-size: 48px
+		text-transform: uppercase
+		margin-bottom: 1em
+
+	&__text
+		font-size: 30px
+		margin-bottom: 3em
+
+	&__item
+		display: flex
+		justify-content: center
+		align-items: center
+		align-self: center
+		height: 100%
+		overflow: hidden
+
+		&_container
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&_desc
+			width: 65%
+			height: 50%
+			align-self: center
+
+		&_img
+			width: 35%
+
+			img
+				margin-left: 0
+
+	&__pagination
+		position: absolute
+		bottom: 20px
+		z-index: 100
+		display: flex
+		justify-content: center
+		width: 100%
+
+		span
+			display: block
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background-color: #cccccc
+			margin: 0 10px
+		
+		.swiper-pagination-bullet-active
+			background-color: $black
+
+	&__button
+		position: absolute
+		top: 50%
+		transform: translate(0, -50%)
+		width: 100%
+		z-index: 100
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 5%
+
+		&_prev,
+		&_next
+			display: block
+			width: 16px
+			height: 16px
+			border-top: 2px solid #777777
+			border-left: 2px solid #777777
+			cursor: pointer
+			outline: none
+
+		&_prev
+			transform: rotate(-45deg)
+
+		&_next
+			transform: rotate(135deg)
+
+
+.magaz
+	padding: 50px 0
+
+	&__title
+		margin-bottom: 40px
+		font-size: 24px
+		font-weight: 400
+
+	&__slider
+	
+		&_item
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			padding: 15px
+			border: 1px solid #dfdfdf
+			align-self: stretch
+			height: auto
+
+		&_img
+			display: flex
+			justify-content: center
+			align-items: center
+			max-height: 185px
+			height: 185px
+			max-width: 90%
+			margin: 0 auto 30px
+			flex-shrink: 0
+
+			img
+				max-width: 100%
+				mxa-height: 100%
+
+		&_desc
+			flex-shrink: 1
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+
+		&_star
+			display: flex
+			align-items: center
+			margin-bottom: 10px
+
+			span
+				line-height: 1
+				margin-left: 10px
+				color: #777
+
+		&_title
+			margin-bottom: 35px
+			font-weight: 500
+
+			a
+				color: #000
+
+				&:hover
+					color: $red
+
+		&_price
+			display: flex
+			justify-content: space-between
+			margin-bottom: 10px
+
+			p
+				display: flex
+				flex-wrap: wrap
+				margin-bottom: 2px
+
+			&--old
+				font-size: 15px
+				color: #777
+				margin-right: 5px
+				font-weight: 500
+				text-decoration: line-through
+
+			&--discoun
+				display: inline-flex
+				padding: 1px 7px
+				line-height: 1.2
+				font-size: 15px
+				font-weight: 500
+				background-color: #38bc63
+				color: #fff
+				border-radius: 3px
+
+			&--total
+				font-size: 22px
+				font-weight: 600
+
+			&--button
+				flex-shrink: 0
+
+				button
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 0
+					border: 1px solid #000
+					width: 55px
+					height: 55px
+					border-radius: 50%
+					background-color: #fff
+
+		&_info
+			display: flex
+			justify-content: space-between
+			font-size: 12px
+
+			span
+				color: $text
+
+			time
+				color: #999
+
+	&__toggle
+		margin-bottom: 20px
+
+		&_item
+			border-radius: 7px
+			border: 1px solid #ffc544
+			padding: 2px 5px
+			max-width: fit-content
+
+			&--red
+				background-color: $red
+				border-color: $red
+				color: #fff
+
+			&--purple
+				background-color: #a241e0
+				border-color: #a241e0
+				color: #fff
+
+			&--blue
+				background-color: #48bdf7
+				border-color: #48bdf7
+				color: #fff
 
 
 .footer
+	height: 500px
+
 	&__container
 		+between
 
@@ -314,7 +764,7 @@
 				align-self: start
 				flex: 0 0 24px
 				height: 24px
-				background-color: $dark
+				background-color: $black
 				border-radius: 50%
 				margin-right: 10px
 
@@ -364,7 +814,7 @@
 			border-radius: 30px
 			justify-content: center
 			align-items: center
-			background-color: $dark
+			background-color: $black
 			color: #fff
 			padding: 0 15px
 			cursor: pointer
@@ -395,7 +845,7 @@
 				align-self: flex-start
 				flex: 0 0 24px
 				height: 24px
-				background-color: $dark
+				background-color: $black
 				border-radius: 4px
 				margin-right: 10px
 				+transition
@@ -429,14 +879,14 @@
 			justify-content: center
 			align-items: center
 			min-height: 60px
-			background-color: $dark
+			background-color: $black
 			color: #ffffff
 			font-size: 16px
 			font-weight: 700
 			cursor: pointer
 			border-radius: 20px
 			display: block
-			box-shadow: 0 0 5px 0 rgba($dark, .3)
+			box-shadow: 0 0 5px 0 rgba($black, .3)
 			border: 0
 			position: relative
 			top: 0
@@ -448,7 +898,7 @@
 			&:active
 				background-color: $accent
 				top: 3px
-				box-shadow: 0 0 5px 0 rgba($dark, .2)
+				box-shadow: 0 0 5px 0 rgba($black, .2)
 
 	&__error
 		position: absolute

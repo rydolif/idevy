@@ -31,6 +31,24 @@
 				<img src="img/logo.png" alt="">
 			</a>
 
+			<div class="header__info">
+				<form action="#" class="header__search">
+					<button><img src="img/search.png" alt=""></button>
+					<input type="search" placeholder="Поиск">
+				</form>
+				<div class="header__login">
+					<a href="#"><img src="img/login.png" alt=""></a>
+				</div>
+				<a href="#"  class="header__comparison">
+					<img src="img/comparison.png" alt="">
+					<span>12</span>
+				</a>
+				<a href="#" class="header__cart">
+					<img src="img/cart.png" alt="">
+					<span>13</span>
+				</a>
+			</div>
+
 			<button class="hamburger" type="button">
 				<span class="hamburger__item"></span>
 			</button>
@@ -38,289 +56,353 @@
 		</div>
 	</header>
 
-	<nav class="header__nav">
-		<div class="container">
-			<ul>
-				<li><a href="#">Робототехника</a></li>
-				<li><a href="#">Техника для кухни</a></li>
-				<li><a href="#">Техника для дом</a></li>
-				<li><a href="#">Aкции</a></li>
-				<li><a href="#">Новинки</a></li>
+	<nav class="nav">
+		<div class="nav__container container">
+			<ul class="nav__list">
+				<li class="nav__list_item nav__list_item--sub">
+					<a href="#" class="nav__list_link nav__list_link--sub">Робототехника</a>
+					<div class="nav__sub-list">
+						<div class="nav__sub-list_item">
+							<div class="nav__sub-list_title">Мелкая</div>
+							<div class="nav__sub-list_wrap">
+								<div class="nav__sub-list_img">
+									<img src="img/tovar1.jpg" alt="">
+								</div>
+								<ul class="nav__sub-list_link">
+									<li><a href="#">Кофемашины</a></li>
+									<li><a href="#">Пароварки</a></li>
+									<li><a href="#">Блендеры</a></li>
+									<li><a href="#">Соковыжималки</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="nav__sub-list_item">
+							<div class="nav__sub-list_title">Крупная</div>
+							<div class="nav__sub-list_wrap">
+								<div class="nav__sub-list_img">
+									<img src="img/tovar1.jpg" alt="">
+								</div>
+								<ul class="nav__sub-list_link">
+									<li><a href="#">Кофемашины</a></li>
+									<li><a href="#">Пароварки</a></li>
+									<li><a href="#">Блендеры</a></li>
+									<li><a href="#">Соковыжималки</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav__list_item nav__list_item--sub">
+					<a href="#" class="nav__list_link nav__list_link--sub">Техника для кухни</a>
+					<div class="nav__sub-list">
+						<div class="nav__sub-list_item">
+							<div class="nav__sub-list_title">Мелкая</div>
+							<div class="nav__sub-list_wrap">
+								<div class="nav__sub-list_img">
+									<img src="img/tovar1.jpg" alt="">
+								</div>
+								<ul class="nav__sub-list_link">
+									<li><a href="#">Кофемашины</a></li>
+									<li><a href="#">Пароварки</a></li>
+									<li><a href="#">Блендеры</a></li>
+									<li><a href="#">Соковыжималки</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="nav__sub-list_item">
+							<div class="nav__sub-list_title">Крупная</div>
+							<div class="nav__sub-list_wrap">
+								<div class="nav__sub-list_img">
+									<img src="img/tovar1.jpg" alt="">
+								</div>
+								<ul class="nav__sub-list_link">
+									<li><a href="#">Кофемашины</a></li>
+									<li><a href="#">Пароварки</a></li>
+									<li><a href="#">Блендеры</a></li>
+									<li><a href="#">Соковыжималки</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav__list_item nav__list_item--sub">
+					<a href="#" class="nav__list_link nav__list_link--sub">Техника для дом</a>
+					<div class="nav__sub-list">
+						<div class="nav__sub-list_item">
+							<div class="nav__sub-list_title">Мелкая</div>
+							<div class="nav__sub-list_wrap">
+								<div class="nav__sub-list_img">
+									<img src="img/tovar1.jpg" alt="">
+								</div>
+								<ul class="nav__sub-list_link">
+									<li><a href="#">Кофемашины</a></li>
+									<li><a href="#">Пароварки</a></li>
+									<li><a href="#">Блендеры</a></li>
+									<li><a href="#">Соковыжималки</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="nav__sub-list_item">
+							<div class="nav__sub-list_title">Крупная</div>
+							<div class="nav__sub-list_wrap">
+								<div class="nav__sub-list_img">
+									<img src="img/tovar1.jpg" alt="">
+								</div>
+								<ul class="nav__sub-list_link">
+									<li><a href="#">Кофемашины</a></li>
+									<li><a href="#">Пароварки</a></li>
+									<li><a href="#">Блендеры</a></li>
+									<li><a href="#">Соковыжималки</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav__list_item">
+					<a href="#" class="nav__list_link">Aкции</a>
+				</li>
+				<li class="nav__list_item">
+					<a href="#" class="nav__list_link">Новинки</a>
+				</li>
 			</ul>
 		</div>
-
 	</nav>
 
-	<section class="section">
+	<section class="hero">
+		<div class="hero__slider swiper-container">
+			<div class="swiper-wrapper">
+				<div class="hero__item swiper-slide">
+					<div class="hero__item_container container">
+						<div class="hero__item_desc">
+							<p class="hero__title"><b>Закрытая распродажа</b> <br> робототехники Hobot</p>
+							<p class="hero__text">Скидки до 20%</p>
+							<div class="hero__btn">
+								<a href="#" class="btn">Купить</a>
+							</div>
+						</div>
+						<div class="hero__item_img">
+							<img src="img/hero__item1.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="hero__item swiper-slide">
+					<div class="hero__item_container container">
+						<div class="hero__item_desc">
+							<p class="hero__title"><b>Испанская техника еще дешевле</b></p>
+							<p class="hero__text">10% при регистрации <br>на всю технику Cecotec</p>
+							<div class="hero__btn">
+								<a href="#" class="btn">Купить</a>
+							</div>
+						</div>
+						<div class="hero__item_img">
+							<img src="img/hero__item2.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="hero__item swiper-slide">
+					<div class="hero__item_container container">
+						<div class="hero__item_desc">
+							<p class="hero__title"><b>Скидки до 3000₽ </b> <br> на всю продукцию</p>
+							<p class="hero__text">По промокоду «Morphy»</p>
+							<div class="hero__btn">
+								<a href="#" class="btn">Купить</a>
+							</div>
+						</div>
+						<div class="hero__item_img">
+							<img src="img/hero__item3.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero__pagination"></div>
+		</div>
+
+		<div class="hero__button">
+			<div class="hero__button_prev"></div>
+			<div class="hero__button_next"></div>
+		</div>
+	</section>
+
+	<section class="magaz">
 		<div class="container">
 
-			<a href="#" class="modal__edits">Добавить</a>
-			<a href="#" class="modal__add">Редактировать</a>
-			<a href="#" class="modal__next">Следующий</a>
-			<a href="#" class="modal__thanks">Благодарность</a>
+			<h2 class="magaz__title">Популярные модели</h2>
 
+			<div class="magaz__slider swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide magaz__slider_item">
+						<div class="magaz__toggle">
+							<div class="magaz__toggle_item">–10% с аксессуаром</div>
+							<span></span>
+						</div>
+						<a href="#" class="magaz__slider_img">
+							<img src="img/magaz1.png" alt="">
+						</a>
+						<div class="magaz__slider_desc">
+							<div>
+								<div class="magaz__slider_star">
+									<img src="img/star.png" alt="">
+									<span>5</span>
+								</div>
+								<p class="magaz__slider_title">
+									<a href="#">
+										Робот-пылесос ECOVACS DEEBOT SLIM 2
+									</a>
+								</p>
+							</div>
+							<div>
+								<div class="magaz__slider_price">
+									<div>
+										<p>
+											<span class="magaz__slider_price--old">18 999</span>
+											<span class="magaz__slider_price--discoun">-1200</span>
+										</p>
+										<span class="magaz__slider_price--total">17 799 ₽</span>
+									</div>
+									<div class="magaz__slider_price--button">
+										<button>
+											<img src="img/magaz__cart.png" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="magaz__slider_info">
+									<span>Доставка</span>
+									<time>завтра, 15 октября</time>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide magaz__slider_item">
+						<div class="magaz__toggle">
+							<div class="magaz__toggle_item magaz__toggle_item--red">Бонусные рубли</div>
+							<span></span>
+						</div>
+						<a href="#" class="magaz__slider_img">
+							<img src="img/magaz2.png" alt="">
+						</a>
+						<div class="magaz__slider_desc">
+							<div class="magaz__slider_star">
+								<img src="img/star.png" alt="">
+								<span>5</span>
+							</div>
+							<p class="magaz__slider_title">
+								<a href="#">
+									Робот-пылесос ECOVACS DEEBOT SLIM 2
+								</a>
+							</p>
+							<div class="magaz__slider_price">
+								<div>
+									<p>
+										<span class="magaz__slider_price--old">18 999</span>
+										<span class="magaz__slider_price--discoun">-1200</span>
+									</p>
+									<span class="magaz__slider_price--total">17 799 ₽</span>
+								</div>
+								<div class="magaz__slider_price--button">
+									<button>
+										<img src="img/magaz__cart.png" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="magaz__slider_info">
+								<span>Доставка</span>
+								<time>завтра, 15 октября</time>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide magaz__slider_item">
+						<div class="magaz__toggle">
+							<div class="magaz__toggle_item magaz__toggle_item--purple">+ Подарок</div>
+							<span></span>
+						</div>
+						<a href="#" class="magaz__slider_img">
+							<img src="img/magaz3.png" alt="">
+						</a>
+						<div class="magaz__slider_desc">
+							<div class="magaz__slider_star">
+								<img src="img/star.png" alt="">
+								<span>5</span>
+							</div>
+							<p class="magaz__slider_title">
+								<a href="#">
+									Робот-пылесос ECOVACS DEEBOT SLIM 2
+								</a>
+							</p>
+							<div class="magaz__slider_price">
+								<div>
+									<p>
+										<span class="magaz__slider_price--old">18 999</span>
+										<span class="magaz__slider_price--discoun">-1200</span>
+									</p>
+									<span class="magaz__slider_price--total">17 799 ₽</span>
+								</div>
+								<div class="magaz__slider_price--button">
+									<button>
+										<img src="img/magaz__cart.png" alt="">
+									</button>
+								</div>
+							</div>
+							<div class="magaz__slider_info">
+								<span>Доставка</span>
+								<time>завтра, 15 октября</time>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide magaz__slider_item">
+						<div class="magaz__toggle">
+							<div class="magaz__toggle_item magaz__toggle_item--blue">Новинка</div>
+							<span></span>
+						</div>
+						<a href="#" class="magaz__slider_img">
+							<img src="img/magaz4.png" alt="">
+						</a>
+						<div class="magaz__slider_desc">
+							<div>
+								<div class="magaz__slider_star">
+									<img src="img/star.png" alt="">
+									<span>5</span>
+								</div>
+								<p class="magaz__slider_title">
+									<a href="#">
+										Робот-пылесос iLife V7S Pro
+									</a>
+								</p>
+							</div>
+							<div>
+								<div class="magaz__slider_price">
+									<div>
+										<p>
+											<span class="magaz__slider_price--old">18 999</span>
+											<span class="magaz__slider_price--discoun">-1200</span>
+										</p>
+										<span class="magaz__slider_price--total">17 799 ₽</span>
+									</div>
+									<div class="magaz__slider_price--button">
+										<button>
+											<img src="img/magaz__cart.png" alt="">
+										</button>
+									</div>
+								</div>
+								<div class="magaz__slider_info">
+									<span>Доставка</span>
+									<time>завтра, 15 октября</time>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="magaz__button">
+					<div class="magaz__button_prev"></div>
+					<div class="magaz__button_next"></div>
+				</div>
+				<div class="hero__pagination"></div>
+			</div>
 		</div>
 	</section>
 
 	<footer class="footer">
 		<div class="footer__container container"></div>
 	</footer>
-
-	<div class="modal" id="modal__edits">
-		<form action="#" class="modal__form form" method="POST">
-	
-			<button class="close modal__close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-	
-				<h3 class="form__title">Добавить елемент в слайдер</h3>
-	
-				<input type="hidden" name="subject" value="Добавить елемент в слайдер">
-	
-				<div class="form__item">
-					<label for="formName" class="form__label">Имя*</label>
-					<input id="formName" type="text" name="name" placeholder="Имя" class="form__input _req">
-				</div>
-	
-				<div class="form__item">
-					<label for="formPhone" class="form__label">Телефон*</label>
-					<input id="formPhone" type="tel" name="phone" placeholder="Телефон" class="form__input _req">
-				</div>
-	
-				<div class="form__item">
-					<label for="formMail">Почта*</label>
-					<input id="formMail" type="email" name="mail" placeholder="Почта" class="form__input _req">
-				</div> 
-	
-				<div class="form__item">
-					<div class="form__label">Левша или правша?</div>
-					<div class="form__options">
-						<div class="form__options_item">
-							<input id="formRigth" type="radio" value="raight" name="hand" class="form__options_input" checked>
-							<label for="formRigth" class="form__options_label"><span>Правша</span></label>
-						</div>
-						<div class="form__options_item">
-							<input id="formLeft" type="radio" value="left" name="hand" class="form__options_input">
-							<label for="formLeft" class="form__options_label"><span>Левша</span></label>
-						</div>
-					</div>
-				</div>
-	
-				<div class="form__item">
-					<label for="formMessage" class="form__label">Сообщение</label>
-					<textarea name="message" id="formMessage" class="form__textarea"></textarea>
-				</div>
-	
-				<div class="form__item">
-					<div class="form__label">Возраст:</div>
-					<select name="age" id="formAge" class="form__select">
-						<option value="18" selected="selected">18</option>
-						<option value="25">25</option>
-						<option value="30">30</option>
-						<option value="50">50</option>
-					</select>
-				</div>
-	
-					<div class="form__item">
-						<div class="form__label">Прикрепить фото:</div>
-						<div class="form__file formImgFile">
-							<div class="form__file_item">
-								<input accept=".jpg, .png, .gif, .ico" type="file" name="image" class="formImage form__file_input">
-								<label class="formLebel form__file_button btn">Выбрать</label>
-							</div>
-							<div id="formPreview" class="formPreview form__file_preview"></div>
-						</div>
-					</div>
-	
-				<div class="form__item">
-					<div class="form__checkbox">
-						<input id="formAgreement" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
-						<label for="formAgreement" class="form__checkbox_label"><span>Персональные данные <a href="#">Файл</a></span></label>
-					</div>
-				</div>
-	
-				<div class="form__btn">
-					<button type="submit" class="btn form__btn_button" name="submit">Отправить</button>
-				</div>
-	
-		</form>
-	</div>
-
-	<div class="modal" id="modal__add">
-		<form action="#" class="modal__form form" method="POST">
-	
-			<button class="close modal__close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-	
-				<h3 class="form__title">Добавить елемент в слайдер</h3>
-	
-				<input type="hidden" name="subject" value="Добавить елемент в слайдер">
-	
-				<div class="form__item">
-					<label for="formName" class="form__label">Имя*</label>
-					<input id="formName" type="text" name="name" placeholder="Имя" class="form__input _req">
-				</div>
-	
-				<div class="form__item">
-					<label for="formPhone" class="form__label">Телефон*</label>
-					<input id="formPhone" type="tel" name="phone" placeholder="Телефон" class="form__input _req">
-				</div>
-	
-				<div class="form__item">
-					<label for="formMail">Почта*</label>
-					<input id="formMail" type="email" name="mail" placeholder="Почта" class="form__input _req">
-				</div> 
-	
-				<div class="form__item">
-					<div class="form__label">Левша или правша?</div>
-					<div class="form__options">
-						<div class="form__options_item">
-							<input id="formRigth" type="radio" value="raight" name="hand" class="form__options_input" checked>
-							<label for="formRigth" class="form__options_label"><span>Правша</span></label>
-						</div>
-						<div class="form__options_item">
-							<input id="formLeft" type="radio" value="left" name="hand" class="form__options_input">
-							<label for="formLeft" class="form__options_label"><span>Левша</span></label>
-						</div>
-					</div>
-				</div>
-	
-				<div class="form__item">
-					<label for="formMessage" class="form__label">Сообщение</label>
-					<textarea name="message" id="formMessage" class="form__textarea"></textarea>
-				</div>
-	
-				<div class="form__item">
-					<div class="form__label">Возраст:</div>
-					<select name="age" id="formAge" class="form__select">
-						<option value="18" selected="selected">18</option>
-						<option value="25">25</option>
-						<option value="30">30</option>
-						<option value="50">50</option>
-					</select>
-				</div>
-	
-					<div class="form__item">
-						<div class="form__label">Прикрепить фото:</div>
-						<div class="form__file formImgFile">
-							<div class="form__file_item">
-								<input accept=".jpg, .png, .gif, .ico" type="file" name="image" class="formImage form__file_input">
-								<label class="formLebel form__file_button btn">Выбрать</label>
-							</div>
-							<div id="formPreview" class="formPreview form__file_preview"></div>
-						</div>
-					</div>
-	
-				<div class="form__item">
-					<div class="form__checkbox">
-						<input id="formAgreement" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
-						<label for="formAgreement" class="form__checkbox_label"><span>Персональные данные <a href="#">Файл</a></span></label>
-					</div>
-				</div>
-	
-				<div class="form__btn">
-					<button type="submit" class="btn form__btn_button" name="submit">Отправить</button>
-				</div>
-	
-		</form>
-	</div>
-
-	<div class="modal" id="modal__next">
-		<form action="#" class="modal__form form" method="POST">
-
-			<button class="close modal__close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-
-				<h3 class="form__title">Добавить елемент в слайдер</h3>
-
-				<input type="hidden" name="subject" value="Добавить елемент в слайдер">
-
-				<div class="form__item">
-					<label for="formName" class="form__label">Имя*</label>
-					<input id="formName" type="text" name="name" placeholder="Имя" class="form__input _req">
-				</div>
-
-				<div class="form__item">
-					<label for="formPhone" class="form__label">Телефон*</label>
-					<input id="formPhone" type="tel" name="phone" placeholder="Телефон" class="form__input _req">
-				</div>
-
-				<div class="form__item">
-					<label for="formMail">Почта*</label>
-					<input id="formMail" type="email" name="mail" placeholder="Почта" class="form__input _req">
-				</div> 
-
-				<div class="form__item">
-					<div class="form__label">Левша или правша?</div>
-					<div class="form__options">
-						<div class="form__options_item">
-							<input id="formRigth" type="radio" value="raight" name="hand" class="form__options_input" checked>
-							<label for="formRigth" class="form__options_label"><span>Правша</span></label>
-						</div>
-						<div class="form__options_item">
-							<input id="formLeft" type="radio" value="left" name="hand" class="form__options_input">
-							<label for="formLeft" class="form__options_label"><span>Левша</span></label>
-						</div>
-					</div>
-				</div>
-
-				<div class="form__item">
-					<label for="formMessage" class="form__label">Сообщение</label>
-					<textarea name="message" id="formMessage" class="form__textarea"></textarea>
-				</div>
-
-				<div class="form__item">
-					<div class="form__label">Возраст:</div>
-					<select name="age" id="formAge" class="form__select">
-						<option value="18" selected="selected">18</option>
-						<option value="25">25</option>
-						<option value="30">30</option>
-						<option value="50">50</option>
-					</select>
-				</div>
-
-					<div class="form__item">
-						<div class="form__label">Прикрепить фото:</div>
-						<div class="form__file formImgFile">
-							<div class="form__file_item">
-								<input accept=".jpg, .png, .gif, .ico" type="file" name="image" class="formImage form__file_input">
-								<label class="formLebel form__file_button btn">Выбрать</label>
-							</div>
-							<div id="formPreview" class="formPreview form__file_preview"></div>
-						</div>
-					</div>
-
-				<div class="form__item">
-					<div class="form__checkbox">
-						<input id="formAgreement" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
-						<label for="formAgreement" class="form__checkbox_label"><span>Персональные данные <a href="#">Файл</a></span></label>
-					</div>
-				</div>
-
-				<div class="form__btn">
-					<button type="submit" class="btn form__btn_button" name="submit">Отправить</button>
-				</div>
-
-		</form>
-	</div>
-
-<div class="modal" id="modal__thanks">
-	<div class="modal__form modal__thanks">
-		<button class="close modal__close" type="button">
-			<span></span>
-			<span></span>
-		</button>
-
-		<h3>Спасибо за доверие!</h3>
-		<p>Мы обязательно с вами свяжемся!</p>
-	</div>
-
-</div>
 
 </body>
 </html>

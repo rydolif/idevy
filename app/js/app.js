@@ -3,29 +3,51 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 	//----------------------SLIDER-hero----------------------
-		// var mySwiper = new Swiper('.hero__slider', {
-		// 	slidesPerView: 1,
-		// 	spaceBetween: 30,
-		// 	loop: true,
-		// 	effect: 'fade',
-		// 	autoplay: {
-		// 		delay: 5000,
-		// 	},
-		// 	pagination: {
-		// 		el: '.hero__pagination',
-		// 		clickable: 'true',
-		// 	},
-		// 	navigation: {
-		// 		nextEl: '.hero__next',
-		// 		prevEl: '.hero__prev',
-		// 	},
-		// 	breakpoints: {
-		// 		320: {
-		// 			slidesPerView: 2,
-		// 			spaceBetween: 20
-		// 		},
-		// 	}
-		// });
+		var mySwiper = new Swiper('.hero__slider', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+			},
+			pagination: {
+				el: '.hero__pagination',
+				clickable: 'true',
+			},
+			navigation: {
+				nextEl: '.hero__button_next',
+				prevEl: '.hero__button_prev',
+			},
+			// breakpoints: {
+			// 	320: {
+			// 		slidesPerView: 2,
+			// 		spaceBetween: 20
+			// 	},
+			// }
+		});
+	//----------------------SLIDER-magaz----------------------
+		var mySwiper = new Swiper('.magaz__slider', {
+			slidesPerView: 4,
+			spaceBetween: 0,
+			// loop: true,
+			autoplay: {
+				delay: 5000,
+			},
+			pagination: {
+				el: '.magaz__pagination',
+				clickable: 'true',
+			},
+			navigation: {
+				nextEl: '.magaz__button_next',
+				prevEl: '.magaz__button_prev',
+			},
+			// breakpoints: {
+			// 	320: {
+			// 		slidesPerView: 2,
+			// 		spaceBetween: 20
+			// 	},
+			// }
+		});
 
 	//----------------------SCROLL-----------------------
 		const scrollTo = (scrollTo) => {
@@ -42,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 						const scrollTarget = document.getElementById(href);
 	
-						// const topOffset = scrollMenu.offsetHeight;
 						const topOffset = 70;
 						const elementPosition = scrollTarget.getBoundingClientRect().top;
 						const offsetPosition = elementPosition - topOffset;
@@ -188,7 +209,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 					for (let index = 0; index < formReq.length; index++) {
 						const input = formReq[index];
-						// formRemoveError(input);
 			
 						if (input.classList.contains('_email')) {
 							if(emailTest(input)) {
@@ -227,7 +247,6 @@ document.addEventListener("DOMContentLoaded", function() {
 					formImage.id = (formImageNumber);
 					formLebel.htmlFor = ('formImage--' + lebel++);
 					formPreview.id = (formPreviewNumber);
-					console.log(formPreview);
 					const formImageAdd = document.querySelector('#' + formImageNumber);
 
 					// изменения в инпуте файл
