@@ -24,7 +24,7 @@
 		<div class="header__container container">
 
 			<p class="header__phone">
-				<a href="tel:+74952900075">+7 495 290 00 75</a>
+				<a href="tel:+74952900075" title="Нажми чтобы позвонить!">+7 495 290 00 75</a>
 			</p>
 
 			<a href="/" class="header__logo">
@@ -32,31 +32,33 @@
 			</a>
 
 			<div class="header__info">
-				<form action="#" class="header__search">
+				<button class="hamburger" type="button" title="Меню">
+					<span class="hamburger__item"></span>
+				</button>
+				<form action="#" class="header__search" title="Поиск">
 					<button><img src="img/search.png" alt=""></button>
 					<input type="search" placeholder="Поиск">
 				</form>
-				<div class="header__login">
+				<div class="header__login" title="Профиль">
 					<a href="#"><img src="img/login.png" alt=""></a>
 				</div>
-				<a href="#"  class="header__comparison">
+				<a href="#"  class="header__comparison" title="Сравнение">
 					<img src="img/comparison.png" alt="">
 					<span>12</span>
 				</a>
-				<a href="#" class="header__cart">
+				<a href="#" class="header__cart" title="Корзина">
 					<img src="img/cart.png" alt="">
 					<span>2</span>
 				</a>
 			</div>
 
-			<button class="hamburger" type="button">
-				<span class="hamburger__item"></span>
-			</button>
-
 		</div>
 	</header>
 
 	<nav class="nav">
+		<button class="nav__hamburger hamburger hamburger--active" type="button" title="Закрыть меню">
+			<span class="hamburger__item"></span>
+		</button>
 		<div class="nav__container container">
 			<ul class="nav__list">
 				<li class="nav__list_item nav__list_item--sub">
