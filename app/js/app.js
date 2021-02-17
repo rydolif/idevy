@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		var mySwiper = new Swiper('.magaz__slider', {
 			slidesPerView: 1,
 			spaceBetween: 0,
+			loop: true,
 			pagination: {
 				el: '.magaz__pagination',
 				clickable: 'true',

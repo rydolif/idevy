@@ -137,16 +137,19 @@
 
 
 .h2
-	margin-bottom: 40px
+	margin-bottom: 30px
 	font-size: 24px
 	font-weight: 400
 
 	+r(1200)
-		margin-bottom: 25px
+		margin-bottom: 20px
 
 	+r(992)
-		font-size: 20px
+		font-size: 15px
 
+
+.swiper-wrapper
+	padding-rigth: 1px !important
 
 .header
 
@@ -159,7 +162,7 @@
 		padding-top: 25px
 		padding-bottom: 25px
 
-		+r(1200)
+		+r(1440)
 			padding-top: 15px
 			padding-bottom: 15px
 
@@ -564,7 +567,6 @@
 		display: flex
 		justify-content: center
 		align-items: center
-		overflow: auto
 		+transition
 
 		+r(767)
@@ -577,6 +579,7 @@
 			margin-left: auto
 			height: 100vh
 			box-shadow: 0 0 10px 0 rgba(#000, .3)
+			overflow: auto
 
 		&_item
 			margin-right: 40px
@@ -606,9 +609,9 @@
 			color: $black
 			padding: 30px 15px
 
-			+r(1200)
+			+r(1440)
 				padding: 15px
-			
+
 			+r(992)
 				padding: 15px 12px
 
@@ -628,7 +631,7 @@
 			&::before
 				content: ''
 				position: absolute
-				bottom: 0
+				bottom: -1px
 				right: 0
 				left: 0
 				height: 1px
@@ -645,9 +648,9 @@
 				&::after
 					content: ''
 					position: absolute
-					top: 48%
+					top: 50%
 					right: 0
-					transform: translate(0, -50%) rotate(-135deg)
+					transform: translate(0, -80%) rotate(-135deg)
 					width: 6px
 					height: 6px
 					border-top: 1px solid #000
@@ -750,11 +753,11 @@
 	background-color: $grey
 
 	&__title
-		font-size: 48px
+		font-size: 46px
 		text-transform: uppercase
 		margin-bottom: 1em
 
-		+r(1200)
+		+r(1440)
 			font-size: 40px
 
 		+r(992)
@@ -768,11 +771,11 @@
 			font-size: 22px
 
 	&__text
-		font-size: 30px
+		font-size: 28px
 		margin-bottom: 3em
 
-		+r(1200)
-			font-size: 28px
+		+r(1440)
+			font-size: 26px
 			margin-bottom: 1em
 
 		+r(992)
@@ -820,7 +823,7 @@
 			img
 				margin-left: 0
 
-				+r(1200)
+				+r(1440)
 					max-height: 440px
 
 				+r(992)
@@ -1177,7 +1180,7 @@
 		&__wrap
 			padding: 90px 65px
 
-			+r(1200)
+			+r(1440)
 				padding: 60px 35px
 			
 			+r(992)
@@ -1388,7 +1391,7 @@
 				max-height: 100%
 
 
-
+.crumbs
 
 
 // -----MODAL-----
