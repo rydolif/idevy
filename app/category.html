@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Главная - Idevy</title>
+	<title>Категория - Idevy</title>
 	<meta name="description" content="Startup HTML Optimized">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.ico">
@@ -302,58 +302,91 @@
 		</div>
 	</nav>
 
-	<section class="hero">
-		<div class="hero__slider swiper-container">
-			<div class="swiper-wrapper">
-				<div class="hero__item swiper-slide">
-					<div class="hero__item_container container">
-						<div class="hero__item_desc">
-							<p class="hero__title"><b>Закрытая распродажа</b> <br> робототехники Hobot</p>
-							<p class="hero__text">Скидки до 20%</p>
-							<div class="hero__btn">
-								<a href="#" class="btn">Купить</a>
-							</div>
-						</div>
-						<div class="hero__item_img">
-							<img src="img/hero__item1.png" alt="">
-						</div>
-					</div>
+	<section class="category">
+		<div class="container">
+
+			<h1 class="h1">Роботы</h1>
+
+			<div class="category__wrap">
+				<div class="category__nav">
+					<p class="category__nav_title">Роботы-пылесосы</p>
+					<ul class="category__nav_list">
+						<li><a href="#">Для сухой уборки</a></li>
+						<li><a href="#">Для влажной уборки</a></li>
+						<li><a href="#">Для сухой и влажной уборки</a></li>
+					</ul>
+					<p class="category__nav_title">Мойщики окон</p>
+					<ul class="category__nav_list">
+						<li><a href="#">С квадратной микрофиброй</a></li>
+						<li><a href="#">С круглой микрофиброй</a></li>
+					</ul>
+					<p class="category__nav_title">Газонокосилки</p>
+					<p class="category__nav_title">Для бассейна</p>
 				</div>
-				<div class="hero__item swiper-slide">
-					<div class="hero__item_container container">
-						<div class="hero__item_desc">
-							<p class="hero__title"><b>Испанская техника еще дешевле</b></p>
-							<p class="hero__text">10% при регистрации <br>на всю технику Cecotec</p>
-							<div class="hero__btn">
-								<a href="#" class="btn">Купить</a>
+				<div class="category__content">
+					<div class="category__slider swiper-container">
+						<div class="swiper-wrapper">
+							<div class="bunner__wrap action__item swiper-slide">
+								<div class="bunner__desc">
+									<p class="bunner__title">Cecotec</p>
+									<p class="bunner__text">Скидка 10% <br> при регистрации</p>
+									<a href="#" class="btn btn--min">Узнать больше</a>
+								</div>
+								<img src="img/bunner2.png" alt="" class="bunner__img">
+							</div>
+							<div class="bunner__wrap action__item swiper-slide">
+								<div class="bunner__desc">
+									<p class="bunner__title">Hobot</p>
+									<p class="bunner__text">Закрытая распродажа! <br>Скидки и подарки</p>
+									<a href="#" class="btn btn--min">Узнать больше</a>
+								</div>
+								<img src="img/bunner3.png" alt="" class="bunner__img">
+							</div>
+							<div class="bunner__wrap action__item swiper-slide">
+								<div class="bunner__desc">
+									<p class="bunner__title">Cecotec</p>
+									<p class="bunner__text">Скидка 10% <br> при регистрации на сайте</p>
+									<a href="#" class="btn btn--min">Узнать больше</a>
+								</div>
+								<img src="img/bunner1.png" alt="" class="bunner__img">
 							</div>
 						</div>
-						<div class="hero__item_img">
-							<img src="img/hero__item2.png" alt="">
+						<div class="category__button">
+							<div class="category__button_prev"></div>
+							<div class="category__button_next"></div>
 						</div>
+						<div class="category__pagination"></div>
 					</div>
-				</div>
-				<div class="hero__item swiper-slide">
-					<div class="hero__item_container container">
-						<div class="hero__item_desc">
-							<p class="hero__title"><b>Скидки до 3000₽ </b> <br> на всю продукцию</p>
-							<p class="hero__text">По промокоду «Morphy»</p>
-							<div class="hero__btn">
-								<a href="#" class="btn">Купить</a>
+					<h2 class="h2">Категории</h2>
+					<div class="category__list">
+						<a href="#" class="category__list_item">
+							<div class="category__list_img">
+								<img src="img/magaz1.png" alt="">
 							</div>
-						</div>
-						<div class="hero__item_img">
-							<img src="img/hero__item3.png" alt="">
-						</div>
+							<span>Роботы-пылесосы</span>
+						</a>
+						<a href="#" class="category__list_item">
+							<div class="category__list_img">
+								<img src="img/magaz2.png" alt="">
+							</div>
+							<span>Мойщики окон</span>
+						</a>
+						<a href="#" class="category__list_item">
+							<div class="category__list_img">
+								<img src="img/magaz3.png" alt="">
+							</div>
+							<span>Газонокосилки</span>
+						</a>
+						<a href="#" class="category__list_item">
+							<div class="category__list_img">
+								<img src="img/magaz4.png" alt="">
+							</div>
+							<span>Для бассейна</span>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="hero__pagination"></div>
-		</div>
 
-		<div class="hero__button">
-			<div class="hero__button_prev"></div>
-			<div class="hero__button_next"></div>
 		</div>
 	</section>
 
@@ -366,242 +399,6 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide magaz__slider_item">
 						<div class="magaz__toggle">
-							<div class="magaz__toggle_item">–10% с аксессуаром</div>
-							<span></span>
-						</div>
-						<a href="#" class="magaz__slider_img">
-							<img src="img/magaz1.png" alt="">
-						</a>
-						<div class="magaz__slider_desc">
-							<div>
-								<div class="magaz__slider_star">
-									<img src="img/star.png" alt="">
-									<span>5</span>
-								</div>
-								<p class="magaz__slider_title">
-									<a href="#">
-										Робот-пылесос ECOVACS DEEBOT SLIM 2
-									</a>
-								</p>
-							</div>
-							<div>
-								<div class="magaz__slider_price">
-									<div>
-										<p>
-											<span class="magaz__slider_price--old">18 999</span>
-											<span class="magaz__slider_price--discoun">-1200</span>
-										</p>
-										<span class="magaz__slider_price--total">17 799 ₽</span>
-									</div>
-									<div class="magaz__slider_price--button">
-										<button>
-											<img src="img/magaz__cart.png" alt="">
-										</button>
-									</div>
-								</div>
-								<div class="magaz__slider_info">
-									<span>Доставка</span>
-									<time datetime="1969-07-16">завтра, 15 октября</time>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide magaz__slider_item">
-						<div class="magaz__toggle">
-							<div class="magaz__toggle_item magaz__toggle_item--red">Бонусные рубли</div>
-							<span></span>
-						</div>
-						<a href="#" class="magaz__slider_img">
-							<img src="img/magaz2.png" alt="">
-						</a>
-						<div class="magaz__slider_desc">
-							<div class="magaz__slider_star">
-								<img src="img/star.png" alt="">
-								<span>5</span>
-							</div>
-							<p class="magaz__slider_title">
-								<a href="#">
-									Робот-пылесос ECOVACS DEEBOT SLIM 2
-								</a>
-							</p>
-							<div class="magaz__slider_price">
-								<div>
-									<p>
-										<span class="magaz__slider_price--old">18 999</span>
-										<span class="magaz__slider_price--discoun">-1200</span>
-									</p>
-									<span class="magaz__slider_price--total">17 799 ₽</span>
-								</div>
-								<div class="magaz__slider_price--button">
-									<button>
-										<img src="img/magaz__cart.png" alt="">
-									</button>
-								</div>
-							</div>
-							<div class="magaz__slider_info">
-								<span>Доставка</span>
-								<time datetime="1969-07-16">завтра, 15 октября</time>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide magaz__slider_item">
-						<div class="magaz__toggle">
-							<div class="magaz__toggle_item magaz__toggle_item--purple">+ Подарок</div>
-							<span></span>
-						</div>
-						<a href="#" class="magaz__slider_img">
-							<img src="img/magaz3.png" alt="">
-						</a>
-						<div class="magaz__slider_desc">
-							<div class="magaz__slider_star">
-								<img src="img/star.png" alt="">
-								<span>5</span>
-							</div>
-							<p class="magaz__slider_title">
-								<a href="#">
-									Робот-пылесос ECOVACS DEEBOT SLIM 2
-								</a>
-							</p>
-							<div class="magaz__slider_price">
-								<div>
-									<p>
-										<span class="magaz__slider_price--old">18 999</span>
-										<span class="magaz__slider_price--discoun">-1200</span>
-									</p>
-									<span class="magaz__slider_price--total">17 799 ₽</span>
-								</div>
-								<div class="magaz__slider_price--button">
-									<button>
-										<img src="img/magaz__cart.png" alt="">
-									</button>
-								</div>
-							</div>
-							<div class="magaz__slider_info">
-								<span>Доставка</span>
-								<time datetime="1969-07-16">завтра, 15 октября</time>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide magaz__slider_item">
-						<div class="magaz__toggle">
-							<div class="magaz__toggle_item magaz__toggle_item--blue">Новинка</div>
-							<span></span>
-						</div>
-						<a href="#" class="magaz__slider_img">
-							<img src="img/magaz4.png" alt="">
-						</a>
-						<div class="magaz__slider_desc">
-							<div>
-								<div class="magaz__slider_star">
-									<img src="img/star.png" alt="">
-									<span>5</span>
-								</div>
-								<p class="magaz__slider_title">
-									<a href="#">
-										Робот-пылесос iLife V7S Pro
-									</a>
-								</p>
-							</div>
-							<div>
-								<div class="magaz__slider_price">
-									<div>
-										<p>
-											<span class="magaz__slider_price--old">18 999</span>
-											<span class="magaz__slider_price--discoun">-1200</span>
-										</p>
-										<span class="magaz__slider_price--total">17 799 ₽</span>
-									</div>
-									<div class="magaz__slider_price--button">
-										<button>
-											<img src="img/magaz__cart.png" alt="">
-										</button>
-									</div>
-								</div>
-								<div class="magaz__slider_info">
-									<span>Доставка</span>
-									<time datetime="1969-07-16">завтра, 15 октября</time>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide magaz__slider_item">
-						<div class="magaz__toggle">
-							<div class="magaz__toggle_item magaz__toggle_item--blue">Новинка</div>
-							<span></span>
-						</div>
-						<a href="#" class="magaz__slider_img">
-							<img src="img/magaz4.png" alt="">
-						</a>
-						<div class="magaz__slider_desc">
-							<div>
-								<div class="magaz__slider_star">
-									<img src="img/star.png" alt="">
-									<span>5</span>
-								</div>
-								<p class="magaz__slider_title">
-									<a href="#">
-										Робот-пылесос iLife V7S Pro
-									</a>
-								</p>
-							</div>
-							<div>
-								<div class="magaz__slider_price">
-									<div>
-										<p>
-											<span class="magaz__slider_price--old">18 999</span>
-											<span class="magaz__slider_price--discoun">-1200</span>
-										</p>
-										<span class="magaz__slider_price--total">17 799 ₽</span>
-									</div>
-									<div class="magaz__slider_price--button">
-										<button>
-											<img src="img/magaz__cart.png" alt="">
-										</button>
-									</div>
-								</div>
-								<div class="magaz__slider_info">
-									<span>Доставка</span>
-									<time datetime="1969-07-16">завтра, 15 октября</time>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="magaz__pagination"></div>
-			</div>
-			<div class="magaz__button">
-				<div class="magaz__button_prev"></div>
-				<div class="magaz__button_next"></div>
-			</div>
-		</div>
-	</section>
-
-	<section class="bunner">
-		<div class="bunner__container container">
-			<div class="bunner__wrap">
-				<div class="bunner__desc">
-					<p class="bunner__title">
-						<b>Беспрецедентные скидки</b>
-						<br>
-						на пылесосы Genio
-					</p>
-					<p class="bunner__text">Бесплатная доставка в день заказа + ценные подарки</p>
-					<a href="#" class="btn">Купить</a>
-				</div>
-				<img src="img/bunner1.png" alt="" class="bunner__img">
-			</div>
-		</div>
-	</section>
-
-	<section class="magaz">
-		<div class="container">
-
-			<h2 class="h2">Новинки</h2>
-
-			<div class="magaz__slider swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide magaz__slider_item">
-						<div class="magaz__toggle">
 							<div class="magaz__toggle_item magaz__toggle_item--blue">Новинка</div>
 							<span></span>
 						</div>
@@ -860,47 +657,6 @@
 			<div class="magaz__button">
 				<div class="magaz__button_prev"></div>
 				<div class="magaz__button_next"></div>
-			</div>
-		</div>
-	</section>
-
-	<section class="action">
-		<div class="container">
-
-			<h2 class="h2">Акции</h2>
-
-			<div class="action__slider swiper-container">
-				<div class="swiper-wrapper">
-					<div class="bunner__wrap action__item swiper-slide">
-						<div class="bunner__desc">
-							<p class="bunner__title">Cecotec</p>
-							<p class="bunner__text">Скидка 10% <br> при регистрации</p>
-							<a href="#" class="btn btn--min">Узнать больше</a>
-						</div>
-						<img src="img/bunner2.png" alt="" class="bunner__img">
-					</div>
-					<div class="bunner__wrap action__item swiper-slide">
-						<div class="bunner__desc">
-							<p class="bunner__title">Hobot</p>
-							<p class="bunner__text">Закрытая распродажа! <br>Скидки и подарки</p>
-							<a href="#" class="btn btn--min">Узнать больше</a>
-						</div>
-						<img src="img/bunner3.png" alt="" class="bunner__img">
-					</div>
-					<div class="bunner__wrap action__item swiper-slide">
-						<div class="bunner__desc">
-							<p class="bunner__title">Cecotec</p>
-							<p class="bunner__text">Скидка 10% <br> при регистрации на сайте</p>
-							<a href="#" class="btn btn--min">Узнать больше</a>
-						</div>
-						<img src="img/bunner1.png" alt="" class="bunner__img">
-					</div>
-				</div>
-				<div class="action__pagination"></div>
-			</div>
-			<div class="action__button">
-				<div class="action__button_prev"></div>
-				<div class="action__button_next"></div>
 			</div>
 		</div>
 	</section>
