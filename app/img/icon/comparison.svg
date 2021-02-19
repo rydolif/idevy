@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #444;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_2" data-name="Фигура 2" class="cls-1" d="M7,0H9V20H7V0Z"/>
+  <path id="Фигура_2_копия" data-name="Фигура 2 копия" class="cls-1" d="M0,10H2V20H0V10Z"/>
+  <path id="Фигура_2_копия_2" data-name="Фигура 2 копия 2" class="cls-1" d="M14,7h2V20H14V7Z"/>
+</svg>
