@@ -485,7 +485,6 @@
 				max-width: 100%
 				max-height: 100%
 
-
 		&_close
 			position: absolute
 			right: 0
@@ -497,9 +496,7 @@
 			opacity: 0
 
 			+r(992)
-				&::before,
-				&::after
-					background-color: $red
+				opacity: 1
 
 			&:hover
 				&::before,
@@ -516,6 +513,9 @@
 				background-color: #777
 				border-radius: 2px
 				+transition
+
+				+r(992)
+					background-color: $red
 
 			&::after
 				width: 12px
@@ -534,8 +534,11 @@
 			+r(576)
 				max-width: calc(100vw - 30px)
 				right: 0
-				left: 50%
+				left: -15px
 				transform: translate(-58vw, 0)
+
+			+r(480)
+				left: 40%
 
 
 .nav
@@ -946,11 +949,12 @@
 			align-items: center
 			height: 185px
 			max-width: 90%
-			margin: 0 auto 30px
+			margin: 0 auto 20px
 			flex-shrink: 0
 
 			+r(1200)
 				height: 140px
+				margin-bottom: 15px
 
 			img
 				max-width: 100%
@@ -1102,24 +1106,30 @@
 
 
 .bunner
-	padding: 10px 0
+	padding: 25px 0
+
+	+r(1440)
+		padding: 15px 0
 
 	&__container
 		position: relative
 		overflow: hidden
 
 	&__title
-		font-size: 28px
+		font-size: 30px
 		line-height: 1.2
 		margin-bottom: 5px
-		// text-transform: uppercase
+		text-transform: uppercase
 		font-weight: 500
+
+		+r(1200)
+			font-size: 28px
 
 		+r(992)
 			font-size: 24px
 
 		+r(767)
-			font-size: 20px
+			font-size: 22px
 
 		b
 			font-weight: 800
@@ -1129,16 +1139,17 @@
 		padding: 100px 60px
 		width: 100%
 		overflow: hidden
-		display: block
+		display: flex
 		color: $text
 		z-index: 3
+		align-self: center
+		+cover
 
 		+r(992)
 			padding: 60px 20px
 
-		&:hover
-			.bunner__img
-				transform: translate(-50%, -50%) scale(1.1)
+		+r(767)
+			padding: 30px 20px
 
 		&::before
 			content: ''
@@ -1151,8 +1162,19 @@
 			z-index: -1
 			visibility: hidden
 
-			+r(480)
+			+r(767)
 				visibility: visible
+
+		&--end
+			justify-content: flex-end !important
+
+			+r(767)
+				text-align: right
+
+			.btn
+				+r(767)
+					margin-right: 0
+					margin-left: auto
 
 	&__text
 		font-size: 16px
@@ -1166,33 +1188,38 @@
 			color: $black
 
 	&__desc
+		display: flex
+		flex-direction: column
+		justify-content: center
 		z-index: 100
-
-	&__img
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translate(-50%, -50%)
 		width: 100%
-		height: auto
-		min-width: 100%
-		min-height: 100%
-		object-fit: cover
-		z-index: -2
-		transition: all 1.2s
+		max-width: 500px
+		height: 100%
+
+		+r(992)
+			max-width: 320px
+
+		+r(576)
+			width: 100%
 
 
 .action
 	position: relative
 
+	.swiper-container
+		height: 410px
+
+		+r(1200)
+			height: 380px
+
+		+r(992)
+			height: 340px
+
+		+r(576)
+			height: 300px
+
 	&__slider
 		padding-bottom: 50px
-
-	&__item
-		display: flex
-		flex-direction: column
-		align-self: center
-		height: 100%
 
 	.bunner
 		&__wrap
@@ -1206,6 +1233,12 @@
 
 			+r(767)
 				padding: 25px 15px
+
+		&__title
+			font-size: 24px
+
+			+r(992)
+				font-size: 20px
 
 		&__text
 			margin-bottom: 70px
@@ -1353,6 +1386,7 @@
 
 	&__button
 		@extend .hero__button
+		padding: 0 20px
 
 		+r(1300)
 			padding: 0 8px
@@ -1366,6 +1400,9 @@
 	&__pagination
 		@extend .hero__pagination
 
+		+r(767)
+			bottom: 10px
+
 	&__list
 		display: grid
 		grid-template-columns: 1fr 1fr 1fr
@@ -1373,8 +1410,15 @@
 		+r(992)
 			grid-template-columns: 1fr 1fr
 
+		+r(767)
+			grid-template-columns: 1fr
+
+		+r(576)
+			grid-template-columns: 1fr 1fr
+
 		+r(480)
 			grid-template-columns: 1fr
+
 
 		&_item
 			display: flex
@@ -1420,8 +1464,83 @@
 				max-width: 100%
 				max-height: 100%
 
+	.bunner
+		&__wrap
+			padding: 85px 45px
+
+			+r(1440)
+				padding: 60px 35px
+			
+			+r(992)
+				padding: 55px 20px
+
+			+r(767)
+				padding: 25px 15px
+
+		&__title
+			font-size: 24px
+
+			+r(992)
+				font-size: 20px
+
+	.swiper-container
+		height: 370px
+
+		+r(992)
+			height: 340px
+
+		+r(576)
+			height: 300px
+
 
 .crumbs
+	width: 100%
+	padding: 15px 0
+
+	ul
+		display: flex
+		align-items: center
+		gap: 15px
+
+		+r(992)
+			gap: 5px
+
+	a
+		color: $text
+
+		&:hover
+			color: $red
+
+
+.pagination
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-wrap: wrap
+	padding-top: 35px
+	gap: 15px
+	font-size: 18px
+
+	+r(992)
+		gap: 15px
+		font-size: 16px
+
+	+r(767)
+		gap: 5px
+		font-size: 14px
+
+	a
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 5px
+		color: $text
+
+		&:hover
+			color: $red
+
+
+
 
 
 // -----MODAL-----
