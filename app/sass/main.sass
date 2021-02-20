@@ -1193,7 +1193,7 @@
 		justify-content: center
 		z-index: 100
 		width: 100%
-		max-width: 500px
+		max-width: 520px
 		height: 100%
 
 		+r(992)
@@ -1540,7 +1540,92 @@
 			color: $red
 
 
+.promotions
+	&__wrap
+		position: relative
 
+	&__button
+		padding: 0 5%
+
+	&__slider
+		margin-bottom: 0
+
+	.swiper-container
+		height: 400px
+
+		+r(992)
+			height: 340px
+
+		+r(576)
+			height: 300px
+
+	&__list
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		grid-gap: 40px 30px
+		padding-top: 50px
+		padding-bottom: 50px
+
+		+r(1200)
+			grid-gap: 20px 15px
+			padding-top: 40px
+			padding-bottom: 40px
+
+		+r(992)
+			grid-template-columns: 1fr 1fr
+			padding-top: 30px
+			padding-bottom: 30px
+
+		+r(576)
+			grid-template-columns: 1fr
+
+		&_item
+			display: block
+			color: $text
+
+			+r(576)
+				max-width: 320px
+				width: 100%
+				margin: 0 auto
+
+			&:hover
+				color: $red
+
+				img
+					transform: translate(-50%, -50%) scale(1.05)
+
+			span, b
+				display: block
+
+			b
+				font-size: 18px
+				margin-bottom: 10px
+
+				+r(992)
+					font-size: 16px
+					margin-bottom: 5px
+
+			span
+				color: $text
+		
+		&_img
+			position: relative
+			padding: 34%
+			margin-bottom: 5px
+			overflow: hidden
+			border-radius: 10px
+
+			img
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translate(-50%, -50%)
+				min-height: 100%
+				object-fit: cover
+				+transition
+
+	&__bunner
+		
 
 
 // -----MODAL-----
